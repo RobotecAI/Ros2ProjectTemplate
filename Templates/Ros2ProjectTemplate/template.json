@@ -4,7 +4,7 @@
     "origin_url": "https://github.com/o3de/o3de-extras",
     "license": "https://github.com/o3de/o3de-extras/tree/development/Templates/Ros2ProjectTemplate/Template/LICENSE.txt",
     "origin_uri": "https://github.com/RobotecAI/Ros2ProjectTemplate/releases/download/1.0.0/Ros2ProjectTemplate-1.0.0.zip",
-    "sha256": "413b9171086ff4ff5f7b6f76d7f43225fb12db686365e7344aa52ed9739ebcf2",
+    "sha256": "5eee1ba87c4c1b67f6ff135be52899c584491d3d928cceb958dc8e6783a21b0e",
     "repo_uri": "https://raw.githubusercontent.com/RobotecAI/Ros2ProjectTemplate/main",
     "display_name": "Ros2ProjectTemplate",
     "summary": "Template for ROS2 projects.",

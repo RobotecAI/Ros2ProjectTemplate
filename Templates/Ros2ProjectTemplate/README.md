@@ -34,9 +34,10 @@ export DEMO_BASE=/home/${USER}/github
 mkdir -p ${DEMO_BASE}
 ```
 
-It is also possible to use O3DE gui to set up a project from template.
+It is also possible to use O3DE gui to set up a project from template. See the [O3DE Project manager documentation](https://www.o3de.org/docs/user-guide/project-config/project-manager/) for more details. It is also required to source your ROS2 distro before launching O3DE manager.
 
 ```shell
+. /opt/ros/humble/setup.bash
 ./build/linux/bin/profile/o3de
 ```
 
@@ -81,15 +82,15 @@ Assign a name for the new project. In this example, it is assumed that it will b
 export PROJECT_NAME=WarehouseTest
 export PROJECT_PATH=$DEMO_BASE/$PROJECT_NAME
 $DEMO_BASE/o3de/scripts/o3de.sh create-project --project-path $PROJECT_PATH --template-path $DEMO_BASE/o3de-extras/Templates/Ros2ProjectTemplate/ -f --keep-restricted-in-project --no-register
-$DEMO_BASE/o3de/scripts/o3de.sh register --project-path $PROJECT_PATH/Project
+$DEMO_BASE/o3de/scripts/o3de.sh register --project-path $PROJECT_PATH
 ```
 
 Enable gems.
 
 ```shell
-$DEMO_BASE/o3de/scripts/o3de.sh enable-gem --gem-name ROS2 --project-path $PROJECT_PATH/Project
-$DEMO_BASE/o3de/scripts/o3de.sh enable-gem --gem-name WarehouseSample --project-path $PROJECT_PATH/Project
-$DEMO_BASE/o3de/scripts/o3de.sh enable-gem --gem-name RosRobotSample --project-path $PROJECT_PATH/Project
+$DEMO_BASE/o3de/scripts/o3de.sh enable-gem --gem-name ROS2 --project-path $PROJECT_PATH
+$DEMO_BASE/o3de/scripts/o3de.sh enable-gem --gem-name WarehouseSample --project-path $PROJECT_PATH
+$DEMO_BASE/o3de/scripts/o3de.sh enable-gem --gem-name RosRobotSample --project-path $PROJECT_PATH
 ```
 
 ### 6. Build the project
@@ -97,7 +98,7 @@ $DEMO_BASE/o3de/scripts/o3de.sh enable-gem --gem-name RosRobotSample --project-p
 Next, let us the build project with the necessary elements of the O3DE engine and ROS2 Gem.
 
 ```shell
-cd $PROJECT_PATH/Project
+cd $PROJECT_PATH
 . /opt/ros/humble/setup.bash
 cmake -B build/linux -G "Ninja Multi-Config" -DLY_UNITY_BUILD=OFF -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DLY_PARALLEL_LINK_JOBS=16 -DLY_STRIP_DEBUG_SYMBOLS=OFF
 cmake --build build/linux --config profile --target $PROJECT_NAME.GameLauncher Editor
@@ -108,9 +109,9 @@ cmake --build build/linux --config profile --target $PROJECT_NAME.GameLauncher E
 Finally, previously built O3DE with preloaded ROS2 Gem can be run:
 
 ```shell
-$PROJECT_PATH/Project/build/linux/bin/profile/Editor
+$PROJECT_PATH/build/linux/bin/profile/Editor
 ```
 
 ## Running ROS example
 
-Refer to `$DEMO_BASE/$PROJECT_NAME/examples/slam_navigation/README.md` for instructions.
+Refer to `$PROJECT_PATH/Examples/slam_navigation/README.md` for instructions.
