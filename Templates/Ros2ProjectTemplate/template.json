@@ -3,9 +3,9 @@
     "origin": "Open 3D Engine Extras",
     "origin_url": "https://github.com/o3de/o3de-extras",
     "license": "https://github.com/o3de/o3de-extras/tree/development/Templates/Ros2ProjectTemplate/Template/LICENSE.txt",
-    "origin_uri": "https://github.com/pijaro/test-repo/releases/download/1.0.0/Ros2ProjectTemplate-1.0.0.zip",
+    "origin_uri": "https://github.com/RobotecAI/Ros2ProjectTemplate/releases/download/1.0.0/Ros2ProjectTemplate-1.0.0.zip",
     "sha256": "a0f5182755bc66423493f10e113387a274f8a5def060d43ecc094d0fd68fb688",
-    "repo_uri": "https://raw.githubusercontent.com/pijaro/test-repo/master",
+    "repo_uri": "https://raw.githubusercontent.com/RobotecAI/Ros2ProjectTemplate/main",
     "display_name": "Ros2ProjectTemplate",
     "summary": "Template for ROS2 projects.",
     "canonical_tags": [],
@@ -379,27 +379,27 @@
             "isTemplated": true
         },
         {
-            "file": "../examples/slam_navigation/launch/config/config.rviz",
+            "file": "Examples/slam_navigation/launch/config/config.rviz",
             "isTemplated": false
         },
         {
-            "file": "../examples/slam_navigation/README.md",
+            "file": "Examples/slam_navigation/README.md",
             "isTemplated": false
         },
         {
-            "file": "../examples/slam_navigation/launch/config/navigation_params.yaml",
+            "file": "Examples/slam_navigation/launch/config/navigation_params.yaml",
             "isTemplated": false
         },
         {
-            "file": "../examples/slam_navigation/launch/config/slam_params.yaml",
+            "file": "Examples/slam_navigation/launch/config/slam_params.yaml",
             "isTemplated": false
         },
         {
-            "file": "../examples/slam_navigation/launch/navigation.launch.py",
+            "file": "Examples/slam_navigation/launch/navigation.launch.py",
             "isTemplated": false
         },
         {
-            "file": "../examples/slam_navigation/launch/slam.launch.py",
+            "file": "Examples/slam_navigation/launch/slam.launch.py",
             "isTemplated": false
         }
     ],
@@ -507,16 +507,16 @@
             "dir": "cmake"
         },
         {
-            "dir": "../examples"
+            "dir": "Examples"
         },
         {
-            "dir": "../examples/slam_navigation"
+            "dir": "Examples/slam_navigation"
         },
         {
-            "dir": "../examples/slam_navigation/launch"
+            "dir": "Examples/slam_navigation/launch"
         },
         {
-            "dir": "../examples/slam_navigation/launch/config"
+            "dir": "Examples/slam_navigation/launch/config"
         }
     ]
 }

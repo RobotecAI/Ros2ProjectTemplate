@@ -1,11 +1,11 @@
 {
-    "repo_name": "test-repo",
-    "origin": "test-repo",
-    "repo_uri": "https://raw.githubusercontent.com/pijaro/test-repo/master",
+    "repo_name": "Ros2ProjectTemplate",
+    "origin": "Ros2ProjectTemplate",
+    "repo_uri": "https://raw.githubusercontent.com/RobotecAI/Ros2ProjectTemplate/master",
     "summary": "",
     "additional_info": "",
     "last_updated": "",
     "templates": [
-        "https://github.com/pijaro/test-repo.git/Templates/Ros2ProjectTemplate"
+        "https://github.com/RobotecAI/Ros2ProjectTemplate.git/Templates/Ros2ProjectTemplate"
     ]
 }
