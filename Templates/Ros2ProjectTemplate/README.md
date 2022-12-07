@@ -27,10 +27,17 @@ The following steps will assume the following:
 
 - All of the requirements coming from O3DE are met.
 - You have ROS2 humble [installed](https://docs.ros.org/en/humble/Installation.html) and environment is [sourced](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Configuring-ROS2-Environment.html#source-the-setup-files).
+- CLI tools would be used,
 - The instructions will be based on a common base folder: `$DEMO_BASE`. For convenience you can export chosen directory name to `$DEMO_BASE`, for example:
 ```shell
 export DEMO_BASE=/home/${USER}/github
 mkdir -p ${DEMO_BASE}
+```
+
+It is also possible to use O3DE gui to set up a project from template.
+
+```shell
+./build/linux/bin/profile/o3de
 ```
 
 ### 1. Install ROS2 packages
